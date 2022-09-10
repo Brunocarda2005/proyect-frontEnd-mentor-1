@@ -40,18 +40,18 @@
         <label>Cardholder Name</label>
         <input type="text" id="nameForm" placeholder="e.g. Jane Appleseed">
         <label>Card Number</label>
-        <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="numberForm">
+        <input type="number" maxlength="18" placeholder="e.g. 1234 5678 9123 0000" id="numberForm">
         <div class="main-form-content-down">
           <div class="main-form-content-down-data">
             <label>Exp. Date (MM/YY)</label>
             <div class="main-form-content-down-data-flex">
-              <input type="number" placeholder="MM" id="data-form-mm">
-              <input type="number" placeholder="YY" id="data-form-yy">
+              <input type="number" maxlength="2" placeholder="MM" id="data-form-mm">
+              <input type="number" maxlength="2" placeholder="YY" id="data-form-yy">
             </div>
           </div>
           <div class="main-form-content-down-cvc">
             <label>CVC</label>
-            <input type="number" placeholder="e.g. 123" id="CVC">
+            <input type="number" maxlength="3" placeholder="e.g. 123" id="CVC">
           </div>
         </div>
         <button class="main-form-content-buton">Confirm</button>
