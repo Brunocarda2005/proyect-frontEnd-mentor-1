@@ -67,18 +67,13 @@ function inputNumber(type , typeCard , length) {
     
     if (type.value.length >= length) {
       
-      typeCard.innerText = 'largo';
+      type.value =  ``;
       correct = false;
       
     }else {
       
       typeCard.innerText = type.value;
       correct = true;
-      
-    }
-    if (type.value.length >= length) {
-      
-      type.value =  ``;
       
     }
     
