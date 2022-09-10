@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Interactive card details form</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  
+  
+  <main class="main">
+    <section class="main-card">
+      <div class="flex">
+        <div class="main-card-back">
+          <p type="number" id="cvcCard">000</p>
+        </div>
+        <div class="main-card-front">
+          <aside class="main-card-front-ilustracion"></aside>
+          <div class="main-card-front-input">
+            <p id="number-card">0000 0000 0000 0000</p>
+            <div class="main-card-front-input-down">
+              <p type="text" id="name">Jane Appleseed</p>
+              <div class="main-card-front-input-down-MM_YY">
+                <p id="data-mm">00</p><label>/</label>
+                <p id="data-yy">00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-form">
+      <form action="" class="main-form-content">
+        <label>Cardholder Name</label>
+        <input type="text" id="nameForm" placeholder="e.g. Jane Appleseed">
+        <label>Card Number</label>
+        <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="numberForm">
+        <div class="main-form-content-down">
+          <div class="main-form-content-down-data">
+            <label>Exp. Date (MM/YY)</label>
+            <div class="main-form-content-down-data-flex">
+              <input type="number" placeholder="MM" id="data-form-mm">
+              <input type="number" placeholder="YY" id="data-form-yy">
+            </div>
+          </div>
+          <div class="main-form-content-down-cvc">
+            <label>CVC</label>
+            <input type="number" placeholder="e.g. 123" id="CVC">
+          </div>
+        </div>
+        <button class="main-form-content-buton">Confirm</button>
+      </form>
+    </section>
+  </main>
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>

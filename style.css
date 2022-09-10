@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+/* ========================== general ==================================== */
+
+
+* {
+  
+  padding: 0;
+  margin: 0;
+  font-family: 'Space Grotesk';
+  font-size: 18px;
+  
+}
+
+
+
+
+:root {
+  
+
+  --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --Red: hsl(0, 100%, 66%);
+
+
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish: hsl(270, 3%, 87%);
+  --Dark-grayish: hsl(279, 6%, 55%);
+  --Very-dark: hsl(278, 68%, 11%);
+  
+  
+}
+
+
+
+
+label {
+  
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--Very-dark);
+  
+}
+
+
+input {
+  
+  outline: none;
+  border: 1.5px solid var(--Light-grayish);
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+   
+}
+
+p {
+
+  display: inline-block;  
+  color: var(--White);
+  font-size: 4vw;
+  
+}
+
+
+
+
+
+/* ============================ style ================================= */
+
+
+
+
+
+
+
+
+.main {
+  
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+
+/* ================================ card ============================= */
+
+
+.main-card {
+  
+  width: 100%;
+  height: 30%;
+  background: url('/images/bg-main-mobile.png');
+  position: relative;
+  
+}
+
+
+
+
+/* back */
+
+.main-card-back {
+  
+  width: 250px;
+  height: 150px;
+  background: url('/images/bg-card-back.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+
+#cvcCard {
+  
+  margin-right: 10%;
+  
+}
+
+
+/* front */
+
+
+
+
+.main-card-front {
+  
+  width: 250px;
+  height: 150px;
+  background: url('/images/bg-card-front.png');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  
+}
+
+.main-card-front-ilustracion {
+  
+  background: url('/images/card-logo.svg');
+  background-size: 100% 100%;
+  width: 60px;
+  height: 33px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+  
+}
+
+
+.main-card-front-input {
+  
+  width: 90%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 5%;
+  bottom: 10px;
+  
+}
+
+#number-Card {
+  
+  width: 100%;
+  font-size: 20px;
+  
+}
+
+#name {
+  
+  width: 70%;
+  overflow-x: auto;
+  padding-right: 2px;
+  
+}
+
+.main-card-front-input-down {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.main-card-front-input-down-MM_YY label{
+  
+  margin-bottom: 0;
+  color: var(--White);
+  
+}
+
+
+@media (min-width : 700px) {
+  
+  p {
+  
+    display: inline-block;  
+    color: var(--White);
+    font-size: 2vw;
+    
+  }
+
+  
+  .main {
+    
+    flex-direction: row;
+    
+  }
+  
+  .flex {
+    
+    position: relative;
+    height: 30%;
+    width: 100%;
+    
+    
+  }
+  
+  .main-card {
+    
+    min-height: 700px;
+    height: 100vh;
+    width: 30%;
+    background: url('/images/bg-main-desktop.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* back */
+  
+  .main-card-back {
+    
+    top: 60%;
+    right: -30%;
+    padding-right: 0%;
+    
+  }
+  
+  
+  /* front */
+  
+  .main-card-front {
+    
+    top: 10%;
+    left: 10%;
+    
+  }
+  
+  
+}
+
+
+
+/* ============================ form ============================== */
+
+
+.main-form {
+
+  width: 90%;
+  margin: auto;
+  
+}
+
+.main-form-content {
+  
+  margin-top: 20%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.main-form-content input::placeholder {
+  
+  color: var(--Light-grayish);
+  
+}
+
+
+.main-form-content-down {
+
+  width: 100%;  
+  display: flex;
+  
+}
+
+.main-form-content-down-data {
+  
+  width: 50%;
+  
+}
+
+
+.main-form-content-down-data-flex {
+  
+  display: flex;
+  
+}
+
+.main-form-content-down-data-flex input {
+  
+  width: 55px;
+  margin-right: 5px;
+  
+}
+
+
+.main-form-content-down-cvc {
+  
+  width: 50%;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.main-form-content-down-cvc label {
+  
+  display: inline-block;
+  margin-bottom: 10px;
+  
+}
+
+
+.main-form-content-buton {
+  
+  margin-top: 10px;
+  padding: 20px 0;
+  background: var(--Very-dark);
+  border: none;
+  color: var(--White);
+  border-radius: 7px;
+  font-size: 18px;
+
+}
+
+@media (min-width : 700px) {
+ 
+ 
+ .main-form { 
+   
+   width: 50%;
+   min-height: 700px;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+ }
+ 
+ .main-form-content {
+   
+   margin-top: 0;
+   
+ }
+  
+  
+}
+
+/* ======================== main correct ====================================== */
+
+
+.main-correct {
+  
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 25%;
+  text-align: center;
+  
+}
+
+.main-correct-text {
+  
+  line-height: 40px;
+  
+}
+
+.main-correct-text p {
+  
+  color: var(--Dark-grayish);
+  
+}
+
+
+@media (min-width: 700px) {
+  
+  .main-correct {
+    
+    height: 100vh;
+    min-height: 700px;
+    margin-top: 0;
+    
+  }
+  
+}
