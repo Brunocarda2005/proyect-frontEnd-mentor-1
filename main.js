@@ -67,7 +67,7 @@ function inputNumber(type , typeCard , length) {
     
     if (type.value.length >= length) {
       
-      type.value =  ``;
+      type.value =  ` `;
       correct = false;
       
     }else {
