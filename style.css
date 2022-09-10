@@ -179,7 +179,8 @@ p {
   width: 70%;
   overflow-x: auto;
   padding-right: 2px;
-  
+  font-size: 13px;
+
 }
 
 .main-card-front-input-down {
@@ -196,6 +197,13 @@ p {
   color: var(--White);
   
 }
+.main-card-front-input-down-MM-YY p {
+
+  font-size: 13px;
+
+}
+
+
 
 
 @media (min-width : 700px) {
