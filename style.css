@@ -104,8 +104,8 @@ p {
 
 .main-card-back {
   
-  width: 250px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   background: url('images/bg-card-back.png');
   background-size: 100% 100%;
   position: absolute;
@@ -126,13 +126,10 @@ p {
 
 /* front */
 
-
-
-
 .main-card-front {
   
-  width: 250px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   background: url('images/bg-card-front.png');
   background-size: 100% 100%;
   position: absolute;
@@ -170,7 +167,7 @@ p {
 #number-Card {
   
   width: 100%;
-  font-size: 20px;
+  font-size: 1rem;
   
 }
 
@@ -179,7 +176,7 @@ p {
   width: 70%;
   overflow-x: auto;
   padding-right: 2px;
-  font-size: 10px;
+  font-size: .5rem ;
 
 }
 
@@ -199,7 +196,7 @@ p {
 }
 .main-card-front-input-down-MM-YY p {
 
-  font-size: 10px;
+  font-size: .8rem ;
 
 }
 
